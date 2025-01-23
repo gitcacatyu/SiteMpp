@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPP Login</title>
+    <style>
+       * {
+        box-sizing: border-box;
+       }
+       body {
+         width: 200;
+         height: 200%; 
+       background-color: rgb(63, 123, 160);
+        }
+    
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+            background-color: #aa1f1f71 ;
+            border: outset 2px  solid  #737373;
+            background: transparent 0.5 ;
+            background-color:  rgb(82, 139, 175);
+        }
+      input{
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+        transition: transform 200ms ease-in-out;
+        background-color:  rgb(255, 244, 236);
+
+      } 
+      input:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+   h3{
+    padding: 5px;
+    font: normal 15pt Arial;
+    color: rgb(32, 32, 89);
+    height: 20px;
+   
+   }
+ 
+   h1{
+    display: block;
+   align-items: center;
+   justify-content: center;
+   margin: 4px auto;
+    font: normal 25pt arial;
+    color: rgb(255, 165, 9);
+    padding-left: 200px;
+    padding-bottom: 1px;
+    margin-top: 15px;
+   }
+
+
+    </style>
+</head>
+<body>
+ 
+  <h1>Mpq</h1>
+
+    <form>
+       
+    <h3>Login</h3>
+    <input type="email" placeholder="Email" id="email">
+    <input type="password" placeholder="Senha" id="senha">
+    <input type="submit" onclick="logar(); return false; return false">
+
+    </form>
+
+    <script>
+
+    function logar() {
+      
+        var  email = document.getElementById('email').value; 
+        var  senha = document.getElementById('senha').value;
+
+         if( email !== '' && senha !== '') {
+           alert('Susseso');
+           location.href = "ji.html";
+        }else {
+          
+          alert('Usuário ou senha incorretos');
+          location.href = "erito.html";
+          }
+
+     
+    }
+
+    </script>
+
+
+</body>
+</html>
