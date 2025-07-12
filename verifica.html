@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verifico</title>
+</head>
+<body>
+    <header>
+        <h2>Verificando idade</h2>
+        <h7>Opcional</h7>
+    </header>
+        <section>
+        <div>
+        <p>Ano de Nacimento: 
+            <label for="txtano">Ano:</label>
+<input type="number" name="txtano" id="txtano" min="0">
+
+        </p>
+        <p>
+         Sexo:
+         <input type="radio" name="radsex" id="masc" checked> 
+         <label for="masc">Masculino</label>
+         <input type="radio" name="radsex" id="femi">
+        <label for="femi">Feminino</label>
+        </p>
+        <p> <input type="button" value="Verificar" onclick="ano()"></p>
+        </div>
+
+        <div id="res">
+          Preencha os dados acima para ver o resultado!
+        </div>
+        </section>
+      
+    <footer>
+        <p>&copy; Mpp</p>
+    </footer>
+   <script>
+   var fano = document.getElementById('txtano')
+    var res = document.querySelector('div#res')
+
+
+    var an = document.getElementById(an) 
+      function ano() { 
+        if (ano === ano){
+           location.href = 'cadras.html'
+           
+        }else if (fano.value.length == 0 || Number(fano.value > ano)) {
+                window.alert('[ERRO] Verifique os dados e tente novamente!')
+        } 
+    
+       
+    } 
+    
+   </script>
+   
+</body>
+</html>
