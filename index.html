@@ -12,7 +12,7 @@
     background: rgba(22, 135, 234, 0.397);
     color: rgb(0, 0, 0);
     font: normal 15pt Arial ;
- cursor: pointer;
+    cursor: pointer;
 
   }
   
@@ -24,7 +24,7 @@
     border-radius: 5px;
    box-shadow: 5px 5px 10px rgba(21, 20, 20, 0.45);
 
-   border-bottom: 5px solid black;
+   border-bottom: 3px solid black;
 
 }
 input:hover{
@@ -44,15 +44,17 @@ input:hover{
 </head>
 <body>
 
-  
-     <h2>Bem, Vindo!(a) <br>
-      Aqui tem tudo menos você!</h2> <br>
-     <br>
-     <h4>Venha logar! <br>
-    Clique em Cadrastar-se<h4>
-   
-       <input type="button" onclick="cadras()" value="Cadrastar-se">
-       <input type="button" onclick="voltar()" value="Sair">
+   <div>     <h2>Bem, Vindo!(a) <br> <br>
+    Aqui tem tudo menos você!</h2> 
+
+   <h4>Venha
+   cadrastar-se!<h4>
+ 
+     <input type="button" onclick="cadras()" value="cadrastar-se">
+     <input type="button" onclick="voltar()" value="Sair">
+    
+     <h6>Em desenvimento</h6></div>
+
     <script>
         var c = document.getElementById('cadras')
         var v = document.getElementById('v')
@@ -69,7 +71,7 @@ input:hover{
         }
     </script>
     <br>
-   <h6>Em desenvimento</h6>
+  
     
 </body>
 </html>
